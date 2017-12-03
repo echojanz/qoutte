@@ -1,0 +1,37 @@
+.center{
+	text-align: center;
+	margin: 0 auto;
+}
+.center:after{
+	content:"\A Click anywhere to continue";
+	color: #1C7DE5;
+	font-size: .5em;
+	clear: both;
+}
+@media only screen and (min-width: 992px) {
+	.center{
+		width: 70%;
+		font-size: 3em;		
+	}
+	.center:after{
+		content:"Click anywhere to continue";
+	}
+}
+@media only screen and (max-width:991px) and (min-width:600px) {
+	.center{
+		width: 85%;		
+		font-size: 2em
+	}
+	.center:after{
+		content:"Tap anywhere to continue";
+	}
+}
+@media only screen and (max-width: 599px) {
+	.center{
+		width: 90%;
+		font-size: 1.5em
+	}
+	.center:after{
+		content:"Tap anywhere to continue";
+	}
+}
