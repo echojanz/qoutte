@@ -18,11 +18,11 @@ export default class App extends Component {
 					]}
 					link={[
 						{
-							rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/css/materialize.min.css'
+							rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.2/css/materialize.min.css'
 						}
 					]}
 					script={[
-						{src: 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/js/materialize.min.js' }
+						{src: 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.2/js/materialize.min.js' }
 					]}
 				/>
 				<Header />
