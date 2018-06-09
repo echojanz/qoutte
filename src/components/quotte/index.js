@@ -16,7 +16,6 @@ export default class Quotte extends Component {
 	componentDidMount(){
 	}
 	componentWillUpdate(e,a){
-		
 		const self = this;
 		const quotte = self.state.quotte;
 		WebFont.load({

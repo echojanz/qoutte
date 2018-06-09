@@ -64,8 +64,8 @@ export default class Footer extends Component {
 					</div>
 					<div class="modal-footer" style={{background: 'transparent', position: 'fixed', bottom: '0'}}>
 						<div class="col s12 center">
-						 <a style={{ color: quotte.color.background }} href="https://twitter.com/echojanz" target="_blank">echojanz</a> & <a style={{ color: quotte.color.background }} href="https://twitter.com/uur_oruc" target="_blank">uur_oruc</a>
-							<a href="#!" class="modal-close right" style={{marginRight: '3em',marginBottom: '3em' }}><img src="../../assets/close.svg"/></a>
+						 <a style={{ color: quotte.color.background }} href="https://twitter.com/echojanz" rel="noopener noreferrer" target="_blank">echojanz</a> & <a style={{ color: quotte.color.background }} href="https://twitter.com/uur_oruc" target="_blank">uur_oruc</a>
+							<a href="#!" class="modal-close right" style={{ marginRight: '3em',marginBottom: '3em' }}><img src="../../assets/close.svg" /></a>
 						</div>
 					</div>
 				</div>

@@ -28,38 +28,11 @@ export default class Home extends Component {
 		}
 	}
 	componentWillMount(){
-		if (!location.search){
-			const quotte = randomQuotte();
-			this.setState({ quotte });
-		}
-		else {
-			let quotte = location.search.slice(1).split('&').map(prop => prop.split('=')).reduce((acc, [key, val]) => ({ [decodeURIComponent(key)]: decodeURIComponent(val), ...acc }), {});
-			console.log(quotte);
-			this.setState({
-				quotte: {
-					color: {
-						primary: quotte.primary,
-						secondary: quotte.secondary,
-						background: quotte.background
-					},
-					font: {
-						name: quotte.font
-					},
-					quote: {
-						quote: quotte.quote
-					}
-				}
-			});
-		}
-		setTimeout( () => {
-			const main = document.getElementById('main');
-			main.className = main.className.replace(' scale-out',' scale-in');
-		},0);
 	}
 	
 	render({},{ quotte , refresh  }) {
 		return (
-			<div id="main" class={style.valign + ` scale-transition scale-out`}
+			<div id="main"
 			//eslint-disable-next-line
 			onClick={(event)=>this.random(event)}>
 				<Quotte quotte={quotte} />
